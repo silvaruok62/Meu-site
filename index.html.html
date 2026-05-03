@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="Particulas"></div>
+
+    <nav class="menu">
+        <a href="#inicio" class="menu-link">Início</a>
+        <a href="#Sobre" class="menu-link">Sobre</a>
+        <a href="#projetos" class="menu-link">Projetos</a>
+        <a href="#contato" class="menu-link">Contato</a>
+    </nav>
+
+    <main class="inicio" id="inicio">
+        <img src="IMG-20260227-WA0014.jpg" alt="foto do perfil do portefólio" class="foto-perfil">
+        <h1>Lucas Almeida</h1>
+        <p class="pt-1">Desenvolvedor Front-end</p>
+    </main>
+
+    <section id="Sobre" class="secao">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-conteudo">
+            <p class="sobre-paragrafo">Olá! Eu sou Lucas Almeida, um desenvolvedor front-end apaixonado por criar
+                experiências web incríveis. Cada linha de código é uma oportunidade de inovar e melhorar a forma como os
+                usuários interagem com a web.</p>
+        </div>
+    </section>
+
+    <!-- Seção única para todos os projetos -->
+    <section id="projetos" class="meus-projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="projeto1.png" alt="Imagem do projeto 1" class="projetos-imagem">
+                <div class="pt">
+                    <h3 class="info-projetos">Loja de Carro</h3>
+                    <p class="info-descricao">Uma pequena loja de demostração de nossos produtos de carro.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="projeto2.png" alt="Imagem do projeto 2" class="projetos-imagem">
+                <div class="pt">
+                    <h3 class="info-projetos">Projeto 2</h3>
+                    <p class="info-descricao">Descrição do projeto 2.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="projeto3.png" alt="Imagem do projeto 3" class="projetos-imagem">
+                <div class="pt">
+                    <h3 class="info-projetos">Projeto 3</h3>
+                    <p class="info-descricao">Descrição do projeto 3.</p>
+                </div>
+            </div>
+        </div>
+        <section id="contato" class="contatos">
+  <h2 class="contato-titulo">Contato</h2>
+  <form onsubmit="enviarWhats(event)">
+    <div class="contato-input">
+      <input type="text" placeholder="Seu nome" class="contato-input" id="nome" required>
+      <textarea placeholder="Sua mensagem" class="contato-input" rows="6" id="mensagem" required></textarea>
+      <button class="butom" type="submit">Enviar WhatsApp</button>
+    </div>
+  </form>
+</section>
+
+
+    </section>
+<script src="script.js">
+    
+</script>
+</body>
+
+</html>
